@@ -11,6 +11,21 @@ body {
 nav {
   background-color: #fff;
   position: absolute;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0c1004;
 }
 
 header {
@@ -50,4 +65,8 @@ footer {
 .snap-align {
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
