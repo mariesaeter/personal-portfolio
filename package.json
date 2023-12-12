@@ -1,0 +1,23 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.0.1",
+  "description": "Personal portfolio for Marie Sæter, showcase of previous work.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariesaeter/personal-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "Marie Sæter",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mariesaeter/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/mariesaeter/personal-portfolio#readme"
+}
