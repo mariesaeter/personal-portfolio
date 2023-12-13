@@ -1,3 +1,7 @@
+html {
+  font-size: 20px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,14 +10,18 @@
 }
 
 nav {
-  background-color: #f7f5f6;
   position: absolute;
   width: 100%;
+  padding: 0.5rem;
+  visibility: hidden;
+  animation: 1s fadeIn;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 nav li {
   list-style: none;
@@ -22,15 +30,16 @@ nav li {
 nav a {
   text-decoration: none;
   color: #0c1004;
+  padding: 0.5rem;
+}
+nav a:hover {
+  color: #7f3070;
+  transition: ease-in-out 0.3s;
 }
 
 p,
 button {
   font-family: Raleway, sans-serif;
-}
-
-header {
-  background-color: #ecd5e7;
 }
 
 header,
@@ -39,22 +48,6 @@ header,
 #contact,
 footer {
   height: 100vh;
-}
-
-#me {
-  background-color: #abd85d;
-}
-
-#projects {
-  background-color: #c072ae;
-}
-
-#contact {
-  background-color: #6b9424;
-}
-
-footer {
-  background-color: #7f3070;
 }
 
 .scroll-snap {
@@ -70,6 +63,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

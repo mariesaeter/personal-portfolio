@@ -3,6 +3,10 @@
 $font-heading: Oranienbaum, serif;
 $font-body: Raleway, sans-serif;
 
+html {
+  font-size: 20px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,14 +15,18 @@ $font-body: Raleway, sans-serif;
 }
 
 nav {
-  background-color: getColor(main-white);
   position: absolute;
   width: 100%;
+  padding: 0.5rem;
+  visibility: hidden;
+  animation: 1s fadeIn;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 
   ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   li {
     list-style: none;
@@ -28,6 +36,11 @@ nav {
   a {
     text-decoration: none;
     color: getColor(main-black);
+    padding: 0.5rem;
+    &:hover {
+      color: getColor(flower-purple-dark);
+      transition: ease-in-out 0.3s;
+    }
   }
 }
 
@@ -36,32 +49,12 @@ button {
   font-family: $font-body;
 }
 
-header {
-  background-color: getColor(flower-purple-light);
-}
-
 header,
 #me,
 #projects,
 #contact,
 footer {
   height: 100vh;
-}
-
-#me {
-  background-color: getColor(plant-green-light);
-}
-
-#projects {
-  background-color: getColor(flower-purple);
-}
-
-#contact {
-  background-color: getColor(plant-green);
-}
-
-footer {
-  background-color: getColor(flower-purple-dark);
 }
 
 .scroll-snap {
@@ -77,4 +70,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
