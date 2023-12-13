@@ -1,15 +1,13 @@
+@import "./maps/index";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: #f7f5f6;
-}
-
 nav {
-  background-color: #fff;
+  background-color: getColor(main-white);
   position: absolute;
   width: 100%;
 
@@ -25,12 +23,12 @@ nav {
 
   a {
     text-decoration: none;
-    color: #0c1004;
+    color: getColor(main-black);
   }
 }
 
 header {
-  background-color: #ecd5e7;
+  background-color: getColor(flower-purple-light);
 }
 
 header,
@@ -42,19 +40,19 @@ footer {
 }
 
 #me {
-  background-color: #abd85d;
+  background-color: getColor(plant-green-light);
 }
 
 #projects {
-  background-color: #c072ae;
+  background-color: getColor(flower-purple);
 }
 
 #contact {
-  background-color: #6b9424;
+  background-color: getColor(plant-green);
 }
 
 footer {
-  background-color: #7f3970;
+  background-color: getColor(flower-purple-dark);
 }
 
 .scroll-snap {
