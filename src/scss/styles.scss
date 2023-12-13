@@ -1,9 +1,13 @@
 @import "./maps/index";
 
+$font-heading: Oranienbaum, serif;
+$font-body: Raleway, sans-serif;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: $font-heading;
 }
 
 nav {
@@ -25,6 +29,11 @@ nav {
     text-decoration: none;
     color: getColor(main-black);
   }
+}
+
+p,
+button {
+  font-family: $font-body;
 }
 
 header {
