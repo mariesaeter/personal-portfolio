@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 * {
@@ -15,8 +15,12 @@ html {
 }
 
 h1 {
-  text-transform: uppercase;
   font-size: 2.75rem;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
 nav {
@@ -60,6 +64,24 @@ footer {
   height: 100vh;
 }
 
+#me,
+#projects,
+#contact {
+  padding-top: 3rem;
+}
+
+.full-h {
+  height: 100vh;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.full-w {
+  width: 100%;
+}
+
 .scroll-snap {
   scroll-snap-type: y mandatory;
   height: 100vh;
@@ -73,6 +95,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#projects img {
+  max-width: 50%;
 }
 
 @keyframes fadeIn {
