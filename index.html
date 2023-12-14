@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a2324745d3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script type="module" src="/src/js/index.mjs" defer></script>
   </head>
   <body>
@@ -25,7 +30,7 @@
       </ul>
     </nav>
     <div class="scroll-snap">
-      <header class="snap-align flex-column">
+      <header class="snap-align flex-column full-h">
         <h1>marie sæter</h1>
         <svg width="200px" height="3px">
           <line x2="200" stroke="#6b9424" stroke-width="3" />
@@ -33,17 +38,14 @@
         <tag>personal portfolio</tag>
       </header>
 
-      <section id="me" class="snap-align">About me</section>
-      <section id="projects" class="snap-align">
+      <section id="me" class="snap-align full-h pt-3">About me</section>
+      <section id="projects" class="snap-align full-h pt-3">
         <h2>Projects</h2>
-        <div class="scroll-snap full-w full-h" id="projectsWrapper">
-          <!-- <div class="snap-align h-100">project 1</div>
-          <div class="snap-align h-100">project 2</div> -->
-        </div>
+        <div class="scroll-snap full-w full-h" id="projectsWrapper"></div>
       </section>
-      <section id="contact" class="snap-align">Contact</section>
+      <section id="contact" class="snap-align full-h pt-3">Contact</section>
 
-      <footer class="snap-align">Footer</footer>
+      <footer class="snap-align full-h">Footer</footer>
     </div>
   </body>
 </html>
