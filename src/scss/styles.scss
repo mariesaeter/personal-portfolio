@@ -45,7 +45,7 @@ nav {
   padding: 0.5rem;
   visibility: hidden;
   animation: 1s fadeIn;
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   z-index: 99;
 
@@ -142,6 +142,9 @@ small {
   margin: 1rem;
   max-height: 90vh;
   z-index: 0;
+  path {
+    stroke: getColor(flower-purple-dark);
+  }
 }
 .relative {
   position: relative;
