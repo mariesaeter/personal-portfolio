@@ -5,7 +5,7 @@ $font-heading: Oranienbaum, serif;
 $font-body: Raleway, sans-serif;
 
 html {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 * {
@@ -13,10 +13,30 @@ html {
   margin: 0;
   padding: 0;
   font-family: $font-heading;
+  background-color: getColor(main-white);
 }
 h1 {
+  font-size: 3.438rem;
+}
+
+h2 {
+  font-size: 2.188rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h1,
+h2,
+h3,
+small,
+a {
   text-transform: uppercase;
-  font-size: 2.75rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -39,7 +59,6 @@ nav {
   }
 
   a {
-    text-decoration: none;
     color: getColor(main-black);
     padding: 0.5rem;
     &:hover {
@@ -50,16 +69,34 @@ nav {
 }
 
 p,
-button {
+button,
+small {
   font-family: $font-body;
 }
 
-header,
+p {
+  line-height: 1.75;
+}
+
+small {
+  color: getColor(flower-purple-dark);
+}
+
 #me,
 #projects,
-#contact,
-footer {
+#contact {
+  padding-top: 3rem;
+}
+
+// Height and width
+.full-h {
   height: 100vh;
+}
+.h-100 {
+  height: 100%;
+}
+.full-w {
+  width: 100%;
 }
 
 .scroll-snap {
@@ -75,6 +112,29 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#projects {
+  img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 0.5rem 0;
+  }
+  .projectCard {
+    padding: 0 3rem;
+
+    .links {
+      gap: 2rem;
+      margin-top: 1rem;
+      a {
+        font-family: $font-body;
+        color: getColor(flower-purple-dark);
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 // animations
