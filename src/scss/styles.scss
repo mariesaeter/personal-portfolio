@@ -1,6 +1,6 @@
 @import "./maps/index";
 @import "./utilities/";
-
+@import "./animations/flower";
 $font-heading: Oranienbaum, serif;
 $font-body: Raleway, sans-serif;
 
@@ -138,17 +138,11 @@ small {
   }
 }
 
-.flowerCircle {
-  padding: 1rem;
+#flowerCircle {
+  margin: 1rem;
   max-height: 90vh;
-
   z-index: 0;
 }
-
-.flowerHalf {
-  width: 100%;
-}
-
 .relative {
   position: relative;
 }
@@ -156,6 +150,7 @@ small {
 .absolute {
   position: absolute;
 }
+
 // animations
 @keyframes fadeIn {
   0% {

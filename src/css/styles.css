@@ -11,6 +11,21 @@
   align-items: center;
 }
 
+#flowerCircle path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -142,14 +157,10 @@ small {
   font-size: 2rem;
 }
 
-.flowerCircle {
-  padding: 1rem;
+#flowerCircle {
+  margin: 1rem;
   max-height: 90vh;
   z-index: 0;
-}
-
-.flowerHalf {
-  width: 100%;
 }
 
 .relative {
