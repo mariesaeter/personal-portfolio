@@ -118,12 +118,14 @@ small {
   img {
     max-width: 100%;
     border-radius: 15px;
+    margin: 0.5rem 0;
   }
   .projectCard {
     padding: 0 3rem;
 
     .links {
       gap: 2rem;
+      margin-top: 1rem;
       a {
         font-family: $font-body;
         color: getColor(flower-purple-dark);

@@ -4,13 +4,13 @@ export const projectsData = [
     media: "/../src/assets/images/holidaze.png",
     tools: "react, tailwind",
     description:
-      "An accommodation booking site where you can view venues and register a user either as a customer or a manager. As a customer you can book a venue and see your upcoming stays, and as a venue manager you can create new venues, view bookings made to your venues, as well as update and delete your venue. To be more on the creative side Ive chosen to make the accommodation booking site into a booking site for venues inspired by books and movies.",
+      "An accommodation booking site created for the final exam at Noroff. To be more on the creative side I've chosen to make the accommodation booking site into a booking site for venues inspired by books and movies.",
     github: "https://github.com/mariesaeter/Noroff-project-exam-2",
     netlify: "https://holidazeadventures.netlify.app",
   },
   {
     title: "Trendtrove",
-    image: "/../src/assets/images/holidaze.png",
+    media: "/../src/assets/images/trendtrove.png",
     tools: "react, sass",
     description:
       "An e-commerce site where you can view products, add them to a cart and checkout. Created with React and SASS.",
@@ -20,7 +20,7 @@ export const projectsData = [
   },
   {
     title: "Bokmynt",
-    image: "/../src/assets/images/holidaze.png",
+    media: "/../src/assets/images/bokmynt.png",
     tools: "bootstrap, sass",
     description:
       "An auction site where users can add items to be bid on and bid on items that other users put up for auction. Created with bootstrap, SCSS and javaScript.",
