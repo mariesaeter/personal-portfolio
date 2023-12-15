@@ -30,12 +30,26 @@
       </ul>
     </nav>
     <div class="scroll-snap">
-      <header class="snap-align flex-column full-h">
-        <h1>marie sæter</h1>
-        <svg width="200px" height="3px">
-          <line x2="200" stroke="#6b9424" stroke-width="3" />
-        </svg>
-        <tag>personal portfolio</tag>
+      <header class="snap-align full-h relative">
+        <div class="full-w flex flowerCircle">
+          <img
+            class="flowerHalf"
+            src="/src/assets/images/blomst-v.svg"
+            alt="flower-circle"
+          />
+          <img
+            class="flowerHalf"
+            src="/src/assets/images/blomst-h.svg"
+            alt="flower-circle"
+          />
+        </div>
+        <div class="flex-column absolute align-items-center">
+          <h1>marie sæter</h1>
+          <svg width="200px" height="3px">
+            <line x2="200" stroke="#6b9424" stroke-width="3" />
+          </svg>
+          <tag>personal portfolio</tag>
+        </div>
       </header>
 
       <section id="me" class="snap-align full-h pt-3">About me</section>

@@ -55,6 +55,7 @@ nav {
   animation: 1s fadeIn;
   animation-delay: 5s;
   animation-fill-mode: forwards;
+  z-index: 99;
 }
 nav ul {
   display: flex;
@@ -139,6 +140,24 @@ small {
 }
 #projects .projectCard .links i {
   font-size: 2rem;
+}
+
+.flowerCircle {
+  padding: 1rem;
+  max-height: 90vh;
+  z-index: 0;
+}
+
+.flowerHalf {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
 
 @keyframes fadeIn {
