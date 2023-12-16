@@ -26,6 +26,7 @@
   "homepage": "https://github.com/mariesaeter/personal-portfolio#readme",
   "devDependencies": {
     "eslint": "^8.55.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.6"
   }
 }
