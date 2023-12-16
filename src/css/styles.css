@@ -17,6 +17,15 @@
   animation: draw 1s linear;
   animation-fill-mode: forwards;
 }
+#flowerCircle .flower path {
+  stroke: #7f3070;
+}
+#flowerCircle .plant-dark path {
+  stroke: #2f4210;
+}
+#flowerCircle .plant path {
+  stroke: #6b9424;
+}
 #flowerCircle .longer {
   animation: draw 2s linear;
   animation-fill-mode: forwards;
@@ -151,7 +160,7 @@ nav {
   padding: 0.5rem;
   visibility: hidden;
   animation: 1s fadeIn;
-  animation-delay: 3s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
   z-index: 99;
 }
@@ -244,9 +253,6 @@ small {
   margin: 1rem;
   max-height: 90vh;
   z-index: 0;
-}
-#flowerCircle path {
-  stroke: #7f3070;
 }
 
 .relative {
