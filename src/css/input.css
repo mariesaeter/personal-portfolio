@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 font-serif box-border;
+  }
+  body {
+    @apply bg-main-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  small,
+  a,
+  li {
+    @apply uppercase;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  p,
+  button,
+  small {
+    @apply font-sans;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  small {
+    @apply text-flower-purple-dark;
+  }
+
+  nav a {
+    @apply text-main-black p-2;
+  }
+  nav a:hover {
+    @apply text-flower-purple-dark transition ease-in-out duration-300;
+  }
+
+  li {
+    @apply list-none;
+  }
+}
+
+.scroll-snap {
+  @apply snap-y snap-mandatory h-screen overflow-y-scroll;
+}
+
+.snap-align {
+  @apply snap-start snap-always flex flex-col justify-center items-center;
+}
+
+.flower path {
+  @apply stroke-flower-purple-dark;
+}
+
+.plant-dark path {
+  @apply stroke-plant-green-dark;
+}
+
+.plant path {
+  @apply stroke-plant-green;
+}

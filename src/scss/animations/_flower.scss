@@ -1,27 +1,10 @@
-#flowerCircle {
+#flowerCircle,
+#aboutAnimation {
   path {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     animation: draw 1s linear;
     animation-fill-mode: forwards;
-  }
-
-  .flower {
-    path {
-      stroke: getColor(flower-purple-dark);
-    }
-  }
-
-  .plant-dark {
-    path {
-      stroke: getColor(plant-green-dark);
-    }
-  }
-
-  .plant {
-    path {
-      stroke: getColor(plant-green);
-    }
   }
 
   .longer {
