@@ -22,8 +22,8 @@
     <script type="module" src="/src/js/index.mjs" defer></script>
   </head>
   <body>
-    <nav>
-      <ul>
+    <nav class="absolute w-full p-2 invisible z-50">
+      <ul class="flex justify-center gap-4">
         <li><a href="/">home</a></li>
         <li><a href="#me">me</a></li>
         <li><a href="#projects">projects</a></li>
@@ -31,9 +31,10 @@
       </ul>
     </nav>
     <div class="scroll-snap">
-      <header class="snap-align full-h relative">
+      <header class="snap-align h-screen relative">
         <svg
           id="flowerCircle"
+          class="m-4 max-h-[90vh] z-0"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 692.77 640.46"
         >
@@ -391,7 +392,7 @@
           </g>
         </svg>
 
-        <div class="flex-column absolute align-items-center">
+        <div class="flex flex-col absolute items-center">
           <h1 class="text-4xl md:text-5xl lg:text-6xl">marie sæter</h1>
           <svg width="200px" height="3px">
             <line x2="200" stroke="#6b9424" stroke-width="3" />
@@ -400,7 +401,7 @@
         </div>
       </header>
 
-      <section id="me" class="snap-align full-h relative">
+      <section id="me" class="snap-align h-screen relative">
         <h2 class="pt-11 pb-6">about me</h2>
         <div class="absolute top-0 right-0 w-1/4">
           <svg
@@ -471,9 +472,7 @@
             </g>
           </svg>
         </div>
-        <div
-          class="flex flex-col lg:w-3/4 lg:flex lg:flex-row xl:w-1/2 align-items-center"
-        >
+        <div class="flex flex-col lg:w-3/4 lg:flex-row xl:w-1/2 items-center">
           <div>
             <div class="mask w-[300px] h-[300px] mb-5"></div>
           </div>
@@ -485,13 +484,16 @@
           </p>
         </div>
       </section>
-      <section id="projects" class="snap-align full-h pt-11">
+      <section id="projects" class="snap-align h-screen pt-11">
         <h2>Projects</h2>
-        <div class="scroll-snap full-w full-h pb-11" id="projectsWrapper"></div>
+        <div
+          class="scroll-snap w-full h-screen pb-11"
+          id="projectsWrapper"
+        ></div>
       </section>
-      <section id="contact" class="snap-align full-h pt-3">Contact</section>
+      <section id="contact" class="snap-align h-screen pt-3">Contact</section>
 
-      <footer class="snap-align full-h">Footer</footer>
+      <footer class="snap-align h-screen">Footer</footer>
     </div>
   </body>
 </html>

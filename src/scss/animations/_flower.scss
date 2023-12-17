@@ -7,24 +7,6 @@
     animation-fill-mode: forwards;
   }
 
-  .flower {
-    path {
-      stroke: getColor(flower-purple-dark);
-    }
-  }
-
-  .plant-dark {
-    path {
-      stroke: getColor(plant-green-dark);
-    }
-  }
-
-  .plant {
-    path {
-      stroke: getColor(plant-green);
-    }
-  }
-
   .longer {
     animation: draw 2s linear;
     animation-fill-mode: forwards;

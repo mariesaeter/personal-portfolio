@@ -1,34 +1,9 @@
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
 #flowerCircle path,
 #aboutAnimation path {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   animation: draw 1s linear;
   animation-fill-mode: forwards;
-}
-#flowerCircle .flower path,
-#aboutAnimation .flower path {
-  stroke: #7f3070;
-}
-#flowerCircle .plant-dark path,
-#aboutAnimation .plant-dark path {
-  stroke: #2f4210;
-}
-#flowerCircle .plant path,
-#aboutAnimation .plant path {
-  stroke: #6b9424;
 }
 #flowerCircle .longer,
 #aboutAnimation .longer {
@@ -149,25 +124,6 @@
     stroke-dashoffset: 0;
   }
 }
-html {
-  font-size: 16px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Oranienbaum, serif;
-}
-
-body {
-  background-color: #f7f5f6;
-}
-
-h1 {
-  font-size: 3.438rem;
-}
-
 h2 {
   font-size: 2.188rem;
 }
@@ -176,126 +132,10 @@ h3 {
   font-size: 1.375rem;
 }
 
-h1,
-h2,
-h3,
-small,
-a {
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-}
-
 nav {
-  position: absolute;
-  width: 100%;
-  padding: 0.5rem;
-  visibility: hidden;
   animation: 1s fadeIn;
   animation-delay: 4s;
   animation-fill-mode: forwards;
-  z-index: 99;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-nav li {
-  list-style: none;
-  text-transform: uppercase;
-}
-nav a {
-  color: #0c1004;
-  padding: 0.5rem;
-}
-nav a:hover {
-  color: #7f3070;
-  transition: ease-in-out 0.3s;
-}
-
-p,
-button,
-small {
-  font-family: Raleway, sans-serif;
-}
-
-p {
-  line-height: 1.75;
-}
-
-small {
-  color: #7f3070;
-}
-
-#contact {
-  padding-top: 3rem;
-}
-
-.full-h {
-  height: 100vh;
-}
-
-.h-100 {
-  height: 100%;
-}
-
-.full-w {
-  width: 100%;
-}
-
-.scroll-snap {
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-.snap-align {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects img {
-  max-width: 100%;
-  border-radius: 15px;
-  margin: 0.5rem 0;
-}
-#projects .projectCard {
-  padding: 0 3rem;
-}
-#projects .projectCard .links {
-  gap: 2rem;
-}
-#projects .projectCard .links a {
-  font-family: Raleway, sans-serif;
-  color: #7f3070;
-}
-#projects .projectCard .links a:hover {
-  color: #c072ae;
-  transition: ease-in-out 0.3s;
-}
-#projects .projectCard .links i {
-  font-size: 2rem;
-}
-
-#flowerCircle {
-  margin: 1rem;
-  max-height: 90vh;
-  z-index: 0;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
 }
 
 @keyframes fadeIn {
@@ -307,10 +147,6 @@ small {
     opacity: 1;
   }
 }
-.clip-me {
-  clip-path: url(#meClip);
-}
-
 .mask {
   background-image: url(../assets/images/me.jpg);
   background-size: cover;
