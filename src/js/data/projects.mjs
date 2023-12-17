@@ -15,7 +15,7 @@ export const projectsData = [
     description:
       "An e-commerce site where you can view products, add them to a cart and checkout. Created with React and SASS.",
     github:
-      "https://github.com/mariesaetehttps://github.com/mariesaeter/noroff-jsframeworks-ca",
+      "https://github.com/mariesaeter/https://github.com/mariesaeter/noroff-jsframeworks-ca",
     netlify: "https://trendtrovefashion.netlify.app",
   },
   {
