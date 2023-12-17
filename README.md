@@ -35,6 +35,7 @@ Porfolio website that showcases my work from the 2nd and final year of front-end
 ## To do
 + Change all sass code into tailwind and css, and remove sass
 + Make animations on the different sections run on scroll
++ Adjust so that the scrolling is more user-friendly
 
  ### Images and icons
  + Icons are gathered from fontawesome
