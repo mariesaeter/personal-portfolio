@@ -1,6 +1,7 @@
 @import "./maps/index";
 @import "./utilities/";
 @import "./animations/flower";
+
 $font-heading: Oranienbaum, serif;
 $font-body: Raleway, sans-serif;
 
@@ -13,6 +14,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: $font-heading;
+}
+body {
   background-color: getColor(main-white);
 }
 h1 {
@@ -83,8 +86,6 @@ small {
   color: getColor(flower-purple-dark);
 }
 
-#me,
-#projects,
 #contact {
   padding-top: 3rem;
 }
@@ -126,10 +127,15 @@ small {
 
     .links {
       gap: 2rem;
-      margin-top: 1rem;
+
       a {
         font-family: $font-body;
         color: getColor(flower-purple-dark);
+
+        &:hover {
+          color: getColor(flower-purple);
+          transition: ease-in-out 0.3s;
+        }
       }
       i {
         font-size: 2rem;
@@ -160,4 +166,20 @@ small {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.clip-me {
+  clip-path: url(#meClip);
+}
+
+.mask {
+  background-image: url(../assets/images/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 45% left 15px;
+
+  mask-image: url(../assets/images/single-flower.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
