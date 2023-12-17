@@ -17,9 +17,9 @@ export const displayProjects = () => {
         <img class="max-w-full my-2 rounded-2xl" src=${media} alt="${title} screenshot" />
         <p class="py-3">${description}</p>
         </div>
-       <div class="flex gap-8 justify-self-center font-sans text-flower-purple-dark hover:text-flower-purple transition ease-in-out duration-300 md:mt-5">
-        <a href=${github} class="flex-column align-items-center"><i class="fa-brands fa-github text-3xl"></i><small>repository</small></a>
-        <a href=${netlify} class="flex-column align-items-center"><i class="fa-solid fa-globe text-3xl"></i><small>netlify</small></a>
+       <div class="flex gap-8 justify-self-center font-sans  hover:text-flower-purple transition ease-in-out duration-300 md:mt-5">
+        <a href=${github} class="flex flex-col items-center text-flower-purple-dark no-underline hover:text-flower-purple"><i class="fa-brands fa-github text-3xl"></i><small>repository</small></a>
+        <a href=${netlify} class="flex flex-col items-center text-flower-purple-dark no-underline hover:text-flower-purple"><i class="fa-solid fa-globe text-3xl"></i><small>netlify</small></a>
         </div>
         </div></div>`;
   });
