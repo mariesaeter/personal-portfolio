@@ -1,0 +1,41 @@
+@import "./animations/flower";
+
+$font-heading: Oranienbaum, serif;
+$font-body: Raleway, sans-serif;
+
+h2 {
+  font-size: 2.188rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+nav {
+  animation: 1s fadeIn;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+// animations
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.mask {
+  background-image: url(../assets/images/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 45% left 15px;
+
+  mask-image: url(../assets/images/single-flower.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
