@@ -937,6 +937,11 @@ a:hover {
   padding-bottom: 0.75rem;
 }
 
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -951,6 +956,10 @@ a:hover {
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -1048,6 +1057,10 @@ a:hover {
     margin-top: 1.25rem;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1077,6 +1090,10 @@ a:hover {
 
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-6xl {
